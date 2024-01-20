@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
+
+/* DO NOT REMOVE */
+/* Without this, mobile viewport gets all messed up. */
+body{
+    min-height: 100vh;
+}
+
+@font-face{
+    font-family: Lombardic;
+    src: url("../media/fonts/lombardic/Lombardic.ttf");
+}
+
+@font-face{
+    font-family: EfcoBrookshire;
+    src: url("../media/fonts/EFCO-Brookshire/EFCO-Brookshire-Regular.ttf");
+}
+
+#root{
+    padding: 20px;
+}
+
+#title{
+    text-align: center;
+}
+
+#title h1{
+    position: relative;
+    top: -9rem;
+    color: #21140f;
+    font-size: 28px;
+    font-family: Lombardic;
+}
+
+#drinks{
+    position: relative;
+    top: -15rem;
+    margin-bottom: -15rem;
+    float: left;
+}
+
+#drinks h1{
+    position: relative;
+    top: -7.5rem;
+    left: 4rem;
+    color: #ffffff;
+    font-family: EfcoBrookshire;
+}
+
+#foods{
+    position: relative;
+    top: -15rem;
+    margin-bottom: -15rem;
+    float: right;
+}
+
+#foods h1{
+    position: relative;
+    top: -7.5rem;
+    left: 3.5rem;
+    margin-right: 3.5rem;
+    color: #ffffff;
+    font-family: EfcoBrookshire;
+}
+
+#foods img{
+    transform: scaleX(-1);
+}
+
+ul{
+    position: relative;
+    top: -6rem;
+    margin-bottom: -6rem;
+    left: -1rem;
+    columns: 2;
+    -webkit-columns: 2;
+    -moz-columns: 2;
+    column-gap: 4rem;
+}
+
+li{
+    color: #ffffff;
+    padding: 4px;
+
+    font-family: 'Montserrat', sans-serif;
+}
+
+@media screen and (max-width: 600px) {
+
+    html, body{
+        max-width: 100%;
+        overflow-x: hidden;
+    }
+
+    #title img{
+        object-fit: cover;
+        width: 90%;
+    }
+
+    #title h1{
+        top: -6.8rem;
+        font-size: 20px;
+    }
+
+    #drinks{
+        top: -2.2rem;
+    }
+
+    #drinks img{
+        object-fit: cover;
+        width: 75%;
+    }
+
+    #drinks h1{
+        top: -5.7rem;
+        margin-bottom: -5.7rem;
+        left: 3.5rem;
+        margin-right: 3.5rem;
+        font-size: 24px;
+    }
+
+    #foods{
+        top: -7.3rem;
+        left: 3rem;
+        margin-left: -2.5rem;
+    }
+
+    #foods img{
+        object-fit: cover;
+        width: 75%;
+    }
+
+    #foods h1{
+        top: -5.7rem;
+        margin-bottom: -5.7rem;
+        left: 3rem;
+        margin-right: 3rem;
+        font-size: 24px;
+    }
+
+    ul{
+        top: 1rem;
+        margin-bottom: 1rem;
+
+        columns: 1;
+        -webkit-columns: 1;
+        -moz-columns: 1;
+    }
+
+}

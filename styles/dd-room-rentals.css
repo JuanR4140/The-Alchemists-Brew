@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Quattrocento&display=swap');
+
+@font-face{
+    font-family: Lombardic;
+    src: url("../media/fonts/lombardic/Lombardic.ttf");
+}
+
+#root{
+    padding: 20px;
+}
+
+#content{
+    padding: 20px;
+}
+
+#text{
+    position: relative;
+    top: -26rem;
+    left: 6rem;
+    color: white;
+    font-family: Lombardic;
+}
+
+p{
+    font-family: 'Quattrocento', serif;
+    font-size: 20px;
+}
+
+@media only screen and (max-width: 600px) {
+
+    #images{
+        position: relative;
+        top: 35rem;
+        text-align: center;
+    }
+
+    #images img{
+        object-fit: cover;
+        width: 90%;
+    }
+
+    #text{
+        position: relative;
+        top: -23rem;
+        left: 0rem;
+        color: white;
+        font-family: Lombardic;
+    }
+
+    br{
+        display: none;
+    }
+}

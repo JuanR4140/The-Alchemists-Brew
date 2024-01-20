@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/cafe-menu.css">
+    <link rel="stylesheet" href="styles/nav.css">
+    <title>The Alchemist's Brew</title>
+</head>
+<body style="background-color: #28140c;">
+
+    <div id="root">
+
+        <div id="nav">
+            <a href="index.html" style="color: #bc8741; text-decoration: none;">HOME</a>
+            <a style="background-color: #836142; border-radius: 5px;">CAFE MENU</a>
+            <a href="about.html" style="text-decoration: none;">ABOUT THE COMPANY</a>
+            <a href="dd-room-rentals.html" style="text-decoration: none;">D&D ROOM RENTALS</a>
+        </div>
+
+        <div id="nav-mobile">
+            <a id="dropdown-btn"> <svg xmlns="http://www.w3.org/2000/svg" height="32" width="32" viewBox="0 0 448 512" style="color: #bc8741;" fill="currentColor"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"/></svg> </a>
+            <div id="dropdown-content">
+                <a style="color: #bc8741; text-decoration: none;" href="index.html">HOME</a>
+                <a style="background-color: #836142; text-decoration: none;">CAFE MENU</a>
+                <a href="about.html" style="text-decoration: none;">ABOUT THE COMPANY</a>
+                <a href="dd-room-rentals.html" style="text-decoration: none;">D&D ROOM RENTALS</a>
+            </div>
+        </div>
+
+        <br>
+        <hr id="seperator">
+        <br>
+    </div>
+
+    <div id="content">
+
+        <div id="title">
+            <img src="media/images/cafe-menu/sign.png">
+            <h1>TAVERN NIBBLES</h1>
+        </div>
+
+        <div id="drinks">
+            <img src="media/images/cafe-menu/board.png">
+            <h1>Drink<br>Menu</h1>
+
+            <ul>
+                <li>Water</li>
+                <li>Tea</li>
+                <li>Lemonade</li>
+                <li>Soda</li>
+                <li>Eggnog</li>
+                <li>Gin</li>
+                <li>Honey</li>
+                <li>More</li>
+            </ul>
+        </div>
+
+        <div id="foods">
+            <img src="media/images/cafe-menu/board.png">
+            <h1>Food<br>Menu</h1>
+
+            <ul>
+                <li>Hamburger</li>
+                <li>Tacos</li>
+                <li>Chips</li>
+                <li>Chocolate</li>
+                <li>Lasagna</li>
+                <li>Salad</li>
+                <li>MEAT</li>
+                <li>Pig</li>
+            </ul>
+        </div>
+    </div>
+    
+    <script src="scripts/nav.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/gh/peterhry/CircleType@2.3.1/dist/circletype.min.js"></script>
+
+    <script>
+        new CircleType(document.querySelector("#title h1")).radius(300);
+    </script>
+</body>
+</html>

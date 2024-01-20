@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
+
+#root{
+    padding: 20px;
+}
+
+#home-container{
+    text-align: center;
+}
+
+#home-container h1{
+    position: relative;
+    top: -23rem;
+    margin-bottom: -6rem;
+    font-size: 64px;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+}
+
+#dd-container{
+    float: left;
+    cursor: pointer;
+}
+
+#dd-container h1{
+    position: relative;
+    top: -3.5rem;
+    left: 1.5rem;
+    margin-bottom: -6rem;
+    margin-right: 1.5rem;
+    font-size: 20px;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+}
+
+#about-container{
+    text-align: center;
+}
+
+#about-container a{
+    position: relative;
+    top: 10rem;
+    margin-bottom: 10rem;
+    right: 9rem;
+    color: #21140f;
+    background-color: #c6a984;
+    border-radius: 16px;
+    font-family: 'Montserrat', sans-serif;
+    padding: 10px;
+    padding-left: 16px;
+    padding-right: 16px;
+    cursor: pointer;
+}
+
+#cafe-menu-container{
+    cursor: pointer;
+    text-align: right;
+    float: right;
+}
+
+#cafe-menu-container img{
+    position: relative;
+    top: -1.2rem;
+}
+
+#cafe-menu-container h1{
+    position: relative;
+    top: -4.8rem;
+    left: -1rem;
+    margin-bottom: -6rem;
+    margin-right: 3rem;
+    font-size: 20px;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+}
+
+#content::after{
+    content: "";
+    clear: both;
+    display: table;
+}
+
+@media screen and (max-width: 600px) {
+
+    html, body{
+        max-width: 100%;
+        overflow-x: hidden;
+    }
+
+    #home-container h1{
+        font-size: 2rem;
+        top: -20rem;
+    }
+
+    #dd-container{
+        float: none;
+        text-align: center;
+        margin-bottom: 3.8rem;
+    }
+
+    #dd-container h1{
+        left: 0.5rem;
+    }
+
+    #about-container{
+        float: none;
+        text-align: center;
+    }
+
+    #about-container a{
+        top: 14rem;
+        left: 0.2rem;
+    }
+
+    #cafe-menu-container{
+        float: none;
+        text-align: center;
+    }
+
+    #cafe-menu-container h1{
+        left: 1.5rem;
+    }
+
+    #content{
+        clear: both;
+    }
+
+  }

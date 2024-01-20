@@ -1,0 +1,59 @@
+@font-face{
+    font-family: Caslon540;
+    src: url("../media/fonts/Caslon-540-Regular/Caslon-540-Regular.otf");
+}
+
+h1{
+    font-family: Caslon540;
+}
+
+#root{
+    padding: 20px;
+}
+
+#content{
+    position: relative;
+    top: -4rem;
+    margin-bottom: -12rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#meet{
+    color: white;
+    padding-left: 4rem;
+    font-size: 6rem;
+}
+
+p{
+    font-size: 1rem;
+}
+
+@media screen and (max-width: 600px) {
+    #content{
+        top: 0rem;
+        margin-bottom: 0rem;
+
+        align-items: center;
+        justify-content: center;
+        display: block;
+        text-align: center;
+    }
+    #content img{
+        object-fit: cover;
+        width: 90%;
+    }
+
+    #content h1{
+        font-size: 20px;
+    }
+
+    #meet{
+        padding-left: 0rem;
+    }
+
+    br{
+        display: none;
+    }
+}
